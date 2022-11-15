@@ -1,0 +1,121 @@
+{
+  "id": "38488e34-ba20-4015-b47e-761cf5dda780",
+  "version": "2.0",
+  "name": "test1",
+  "url": "https://www.calculator.net",
+  "tests": [{
+    "id": "ac7bfbeb-9731-4529-89a5-af2085c12757",
+    "name": "testt",
+    "commands": [{
+      "id": "4e9660b6-f619-492c-aa8f-5196626ffa92",
+      "comment": "",
+      "command": "open",
+      "target": "/fuel-cost-calculator.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "18a00ef8-4c2b-4bf0-970c-f0aef51d9b00",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d55051eb-34e6-405c-84bf-6b51c19877a4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.panel tr:nth-child(1)",
+      "targets": [
+        ["css=.panel tr:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='content']/table/tbody/tr", "xpath:idRelative"],
+        ["xpath=//tr", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8a04dd3-765b-4618-a5ed-cee8aec377a7",
+      "comment": "",
+      "command": "type",
+      "target": "name=tripdistance",
+      "targets": [
+        ["name=tripdistance", "name"],
+        ["css=tr:nth-child(1) .inhalf", "css:finder"],
+        ["xpath=//input[@name='tripdistance']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "344"
+    }, {
+      "id": "d2555725-f8f7-4307-83e5-c2ceccd93af3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.panel tr:nth-child(2)",
+      "targets": [
+        ["css=.panel tr:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/table/tbody/tr[2]", "xpath:idRelative"],
+        ["xpath=//tr[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09d265d5-9f62-4bdf-8e6b-1f7f88eb5649",
+      "comment": "",
+      "command": "type",
+      "target": "name=fuelefficiency",
+      "targets": [
+        ["name=fuelefficiency", "name"],
+        ["css=tr:nth-child(2) .inhalf", "css:finder"],
+        ["xpath=//input[@name='fuelefficiency']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "5.5"
+    }, {
+      "id": "07f40ac8-396d-445c-9bbe-2ecc4ad85e96",
+      "comment": "",
+      "command": "click",
+      "target": "name=gasprice",
+      "targets": [
+        ["name=gasprice", "name"],
+        ["css=.indollar", "css:finder"],
+        ["xpath=//input[@name='gasprice']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6586ec40-64f8-4dad-a4e2-2a68306d44d8",
+      "comment": "",
+      "command": "type",
+      "target": "name=gasprice",
+      "targets": [
+        ["name=gasprice", "name"],
+        ["css=.indollar", "css:finder"],
+        ["xpath=//input[@name='gasprice']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "1.8"
+    }, {
+      "id": "934a271f-f84f-4ba9-a359-8320e30129f6",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) input",
+      "targets": [
+        ["css=tr:nth-child(4) input", "css:finder"],
+        ["xpath=//input[@value='Calculate']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/table/tbody/tr[4]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "3239d439-4f9c-4f46-a367-000f68e2c4d9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ac7bfbeb-9731-4529-89a5-af2085c12757"]
+  }],
+  "urls": ["https://www.calculator.net/"],
+  "plugins": []
+}
